@@ -33,6 +33,7 @@ public class App {
 
     imc = peso/(altura*altura);
 
+    System.out.println("seu IMC é: " + imc);
     if(imc >= 18.5){
         if(imc< 25){
             System.out.println( nome + " está com o peso ideal.");
