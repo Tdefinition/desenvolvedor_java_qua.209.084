@@ -38,32 +38,38 @@ public class App {
         System.out.println("Sala: 5- A vingança do peixe frito - 18 anos");
         opc = sc.nextInt();
 
-        switch(opc) {
-        
-        case 1 : 
-            clas = 0;
-            break;
-        case 2 :
-            clas = 12;
-            break;
-        case 3:
-            clas = 14;
-            break;
-        case 4:
-            clas = 16;
-            break;
-        case 5:
-            clas = 18;
-            break;
-        
-    if( clas > age){
-    System.out.println("Retire seu ingresso no caixa!");
-    }else {
-        
+    switch(opc){
+
+    case 1: clas = 0;
+    break;
+    
+    case 2: clas = 12;
+    break;
+
+    case 3: clas = 14;
+    break;
+
+    case 4: clas = 16;
+    break;
+
+    case 5: clas = 18;
+    break;
+
+    default: clas = 1000;
+    System.out.println("Operação inválida");
+            
     }
+
+    if(opc>0 && opc<5){
+        if( age>=clas){
+             System.out.println("Retire o seu ingresso!");
+        }else {
+            System.out.println("Idade não suficiente. Por favor, escolha outro filme.");
         }
-
-
+        
+    } else{
+        System.out.println("Tente novamente");
+    }
     }while(clas> age);
 
         sc.close();
