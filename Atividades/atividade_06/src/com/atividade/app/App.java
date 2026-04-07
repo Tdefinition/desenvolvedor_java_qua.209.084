@@ -35,10 +35,16 @@ public class App {
     switch (tipoVeiculo){
 
         case "A":
-            Moto moto = new( "null", "null", )
-    }
+            Moto moto = new Moto( null, null, null, null, null, "A", null );
 //categoria do veiculo deve ser informada pelo programa então : dentro do new ( ao inves de null 
 // ser "A" ja que a categoria não vai ser informada pelo usuario nos proximos passos))
+        System.out.println("Informe o fabricante: ");
+        moto.fabricante = (sc.nextLine());
+        System.out.println("");
+
+        break;
+    }
+
 
 
 
