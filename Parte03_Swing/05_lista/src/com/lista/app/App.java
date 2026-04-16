@@ -26,8 +26,8 @@ public class App {
 
             }else {
                 JOptionPane.showMessageDialog(null, "Programa encerrado");
-             } while( opcao != "Sair") ;
-    }
+             } 
+    } while( opcao != "Sair") ;
 }
 
 }
