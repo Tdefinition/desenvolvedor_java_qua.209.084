@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- link para voltar -->
+     <a href=" index.html"> Voltar</a>
+
+     <!-- link interno é um link que direciona para outra pagina dentro do seu proprio site -->
+
+     <h1> Formulário</h1>
+     <form action="" method="">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required ><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id = "idade" name="idade" min="0"><br><br> 
+        <!-- posso declarar o numero maximo e min que a resposta pode ser usando dps do name 
+         min"x" ou max"x"-->
+        <label for="altura">Altura:</label><br>
+        <input type="number" id ="altura" name="altura" step="0.01"><br><br>
+
+        <label for="data de nascimento"> Data de nascimento:</label><br>
+        <input type="date" id="dataNascimento" name="dataNascimento"><br><br>
+
+        <label for="genero"> Gênero: </label><br>
+        <input type="radio" id="genero" name="genero"
+        value="Masculino"><span>Masculino</span><br>
+        <input type="radio" id="genero" name="genero"
+        value="Feminino"><span>Feminino</span><br>
+        <input type="radio" id="genero" name="genero"
+        value="Outro"><span>Outro</span><br>
+
+        <label for="escolaridade">Escolaridade:</label><br>
+        <select id="escolaridade" name="escokaridade">
+            <option value="fundamental">Fundamental</option>
+            <option value="médio">Médio</option>
+            <option value="superior">Superior</option>
+            <option value="pós">Pós Graduação</option>
+            <option value="mestrado">Mestrado</option>
+            <option value="doutorado">Doutorado</option>
+
+        </select><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha"><br><br><br><br>
+
+        <button type="submit">Cadastrar informações</button>
+        <button type="reset">Resetar formulário</button><br><br>
+
+        
+        
+
+     </form>
+</body>
+</html>
+
+<!-- tipos de link: interno, externo , outro que n lembro o nome -->
+ <!-- tag form é preciso para xconseguir armazenar as informações dadas pelo usuario -->
+
+ <!-- label é a legenda -->
+
+ <!-- input do tipo text é no maximo 225 carateres -->
+  <!-- id é para cadastrar as informações no javascript e o name para o java-->
