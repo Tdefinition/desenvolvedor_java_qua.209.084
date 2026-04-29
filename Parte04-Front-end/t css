@@ -1,0 +1,71 @@
+o que é css? 
+
+o css é usado para definir estilos para suas páginas web,
+incluindo o desing, o layout e as variações de exibição 
+para diferentes dispositivos e tamanhos da tela
+
+As definições de CSS são normalmente salvas em um 
+arquivo .css externo.
+
+Com um arquivo de folha de estilo externo, você pode mudar 
+a aparência de um site inteiro alterando apenas um arquivo!
+
+Uma regra CSS consiste em um seletor e um bloco de declaração:
+
+ex:
+h1 {color:blue; font-size:12px;}
+
+Declarações CSS múltiplas são separadas por ponto e vírgula, e blocos
+ de declaração são delimitados por chaves.O bloco de declaração contém uma 
+ ou mais declarações separadas por ponto e vírgula.
+ Cada declaração inclui um nome de propriedade CSS e um valor,
+separados por dois pontos.
+
+o que cada elemento é?:
+
+h1 nesse caso representa o seletor. O seletor aponta para o elemento 
+html que você deseja estilizar
+
+color e font-size são propriedades 
+
+enquato blue e 12px são seus respectivos valores 
+
+
+SELETORES
+
+os seletores no css são utilizados para "encontrar" (ou selecionar)
+os elementos html que você deseja estilizar
+
+TIPOS DE SELETORES
+
+seletores simples: selecionam elementos com base em nome, ID e classe
+
+Seletores combinatórios (selecionam elementos com base em uma relação específica entre eles)
+Seletores de pseudo-classe (selecionam elementos com base em um determinado estado)
+Seletores de pseudo-elementos (selecionam e estilizam uma parte de um elemento)
+Seletores de atributos (selecionam elementos com base em um atributo ou valor de atributo)
+
+<!-- mais sobre 
+ https://www-w3schools-com.translate.goog/css/css_selectors.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=sge -->
+
+O seletor de ID CSS
+
+O id seletor utiliza o atributo id de um elemento HTML para selecionar um elemento específico.
+
+O ID de um elemento é único dentro de uma página, portanto, o seletor de ID é 
+usado para selecionar um elemento específico!
+
+Para selecionar um elemento com um ID específico, digite o caractere hash (#), seguido pelo ID do elemento.
+
+
+
+Como adicionar CSS 
+
+Quando um navegador lê uma folha de estilo, ele formatará o documento HTML 
+de acordo com as informações contidas nessa folha.
+
+Existem três maneiras de inserir uma folha de estilo:
+
+    <!-- CSS externo - link para um arquivo .css externo -->
+    <!-- CSS interno - use o elemento  <style> na seção <head> -->
+    <!-- CSS embutido - utilize o atributo style em elementos HTML -->
