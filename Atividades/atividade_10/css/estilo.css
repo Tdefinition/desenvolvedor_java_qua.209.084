@@ -1,0 +1,39 @@
+/* A regra @font-face no CSS serve para carregar e utilizar fontes personalizadas em um site, permitindo que o navegador baixe e exiba tipografias que não estão instaladas no computador do usuário. */
+
+* {
+    margin: 0px auto;
+}
+
+.container{
+    margin: 5%;
+}
+
+#TODO definir a fonte
+
+
+header, .youcast-now, nav{
+ height: 100px;
+ /* define a distancia que está do do topo da pagina */
+}
+.youcast-now, nav, .nome-logo {
+    float: left;
+    /* define a posição de onde a logo o navegador e as opções do topo estará localizado  */
+    /* segue a ordem que foi colocado no html, ou seja se  a logo foi colocado primeiro 
+    e a localização for definida na esquerda da pagina a Logo vai estar mais proxima 
+    da borda a esquerda e vai seguindo a ordem. a msm coisa acontecerá ser for definido a direita
+    a logo vai ser o elemento mais proximo a margem direita. */
+
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    width: 100%;
+/* largura da linha */
+    color: #fff;
+    /* cor da letra */
+    border-bottom: 4px solid;
+     /* tamanho da linha */
+    border-image-source: linear-gradient(to right, #0f0, #f0f);
+    border-image-slice: 1;
+}
+
