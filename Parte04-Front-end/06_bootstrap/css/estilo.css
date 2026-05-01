@@ -1,0 +1,21 @@
+/* tambem posso trabalhar c o meu css em conjunto com o bootstrap
+
+mas ao contrario dos outros projetos não posso colocar o lnk 
+em qualquer lugar 
+deve ser de*/
+
+/* criar uma class
+ */
+
+ .bg-pink{
+    background-color: rgb(216, 138, 216) ;
+ }
+ .bg-verde-g{
+
+    background-image: linear-gradient(to left top , rgb(1, 102, 30), rgb(36, 141, 15));
+ }
+ .bg-cute{
+
+    background-image: linear-gradient( to top right, rgba(105, 16, 86, 0.363) ,#973973, #e675b5);
+    
+ }
