@@ -19,8 +19,10 @@ a cada novo projeto deve-se instalar o bootstrap, não é por maquina é por PRO
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <!-- link do bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+     crossorigin="anonymous">
 
 <!-- meu css -->
  <link href="css/estilo.css" rel="stylesheet" type="text/css" media="all">
@@ -32,7 +34,7 @@ a cada novo projeto deve-se instalar o bootstrap, não é por maquina é por PRO
     <nav class="navbar navbar-expand-lg bg-cute">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-               <img src="img/death.png" alt="logo menu" class="logo"  style="width: 70px; height: 70px;"> </a>
+               <img src="img/black.png" alt="logo menu" class="logo"  style="width: 70px; height: 70px;"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -73,6 +75,65 @@ a cada novo projeto deve-se instalar o bootstrap, não é por maquina é por PRO
     </nav>
 
     <!-- fim do menu superior -->
+     <!-- conteudo da pagina -->
+      <main>
+        <div class="container" >
+        <!-- o bootstrap ja vem com uma classe container logo não precisamos criar essa classe. Porém,
+          class container de=o bootstrap é diferente da que estavamos trabalhando. qnd utilizamod o container c o boot =strap automaticamente 
+          conseguimos divir a tela 12 colunas -->
+          <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Formulário BootStrap</h1>
+          <hr> 
+          <!-- A tag <hr> no HTML representa uma quebra temática ou linha horizontal, usada para separar conteúdos, 
+           mudar de tópico ou dividir seções. É um elemento auto-fechável (não precisa de </hr>), 
+           estilizado com CSS para alterar cor, espessura e estilo. É semanticamente importante para indicar mudança de -->
+
+
+          <form method="">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-10 col-xl-6 ">
+                    <!-- col-12 é o tamanho para celular -->
+                    <label for="nome" class="form-label" > Primeiro nome: </label>
+                    <input class="form-control" type="text" placeholder="Informe o primeiro nome:" 
+                    aria-label="nome"><!-- eu peguei o conteudo dessa ultima div class do get bootstrap 
+                 entrando em docs clicando na seão de forms o control forms e cpiando o segundo codigo da seção sizing -->
+                 <!-- placeholder é aquele texto cinza que aparece nas barras antes que preencha as colunas -->
+                </div> 
+                <div class="col-12 col-md-6 col-lg-4 col-xl-6 ">
+                    <label for="sobrenome" class="form-label" > Sobrenome: </label>
+                    <input class="form-control" type="text" placeholder="Informe o sobrenome:" 
+                    aria-label="sobrenome">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 ">
+                    <label for="cpf" class="form-label" > CPF: </label>
+                    <input class="form-control" type="text" placeholder="Informe o CPF:" 
+                    aria-label="cpf">
+                </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-3 ">
+                    <label for="telefone" class="form-label" > Telefone: </label>
+                    <input class="form-control" type="tel" placeholder="(ddd) xxxxx-xxxx:" 
+                    aria-label="telfone">
+                </div>
+                <div class="col-6 col-md-4 col-lg-4 col-xl-2 ">
+                    <label for="nascimento" class="form-label" > Data de Nascimento: </label>
+                    <input class="form-control" type="date"     aria-label="dataNascimento">
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-2 ">
+                    <label for="genero" class="form-label" > Gênero: </label>
+                   <select class="form-select" aria-label="genero">
+                     <!-- ao inves de input eu ocloco o select opção do bootstrap -->
+                    <option selected>Gênero</option>
+                    <option value="1">Femenino</option>
+                    <option value="2">Masculino</option>
+                     <option value="3">Outro</option>
+            </select>
+                </div>
+                    
+                <div class="d-flex justify-content-end mt-5">
+                    <button type="submit" class="btn btn-success" >Enviar</button>
+                </div>
+          </form>
+        </div>
+      </main>
 
     <!-- qnd estiver um <script> esta relacionado ao java script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -84,3 +145,7 @@ a cada novo projeto deve-se instalar o bootstrap, não é por maquina é por PRO
 <!-- <nav class="navbar navbar-expand-lg " data-bs-theme="dark" style ="background-color: rgb(248, 174, 248);"></nav> -->
 <!-- ao inves da linha 32 eu posso alterar pra trabalhar com o meu css  -->
  <!-- <nav class="navbar navbar-expand-lg bg-pink "";"></nav> -->
+  <!-- dising respansivo: fazer com que a pagina se adapte a diferentes tipos de dispositivos
+   mobile first: é quase a msm coisa que o desing respansivo mas a pagina vai ser considerado como tela padrao a do smart phone 
+   caso vc tenha aberto no computador , ela vai ser aberta primeiramente no layout do menor smartphone possivel
+   e dps ira se adaptar ao tamanho do dispositivo qu evocê esta utilizando -->
