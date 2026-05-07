@@ -9,9 +9,9 @@ const maioridade = () => {
 
     //saída de dados
     if(idade>=18){
-        document.querySelector('#result').innerHTML = nome + "é maior de idade;"
+        document.querySelector('#result').innerHTML = nome + "é maior de idade";
     }else{
-        document.querySelector('#result').innerHTML = nome + "é menor de idade;"
+        document.querySelector('#result').innerHTML = nome + "é menor de idade";
     }
 
     form.reset();
