@@ -1,43 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculo IMC</title> 
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family:Cossette Texte ;
+            src: url(fonts/CossetteTexte-Regular.ttf);
+        }
+        body {
+            
+            padding: 20px 100px;
+            background-color:rgba(232, 233, 224, 0.648);
+            color: rgb(57, 55, 55);
+        }
+        h2{
+            font-size: 38px;
+            font-family: Cossette Texte;
+        }
+
+    
+    </style>
+    
 </head>
 <body>
     <!-- menu superior -->
+
+      <nav class="navbar bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" style="font-size: 30px;" >
+      <img src="img/imc.jpg" width="50" height="40" class="d-inline-block align-text-top" >
+      Calculadora IMC
+    </a>
+  </div>
+</nav>
      <!-- fim do menu -->
       <!-- conteudo da pagina -->
     <main> 
-        <div class="container" >
-        
-    <form method="">
-       <div class="col-12 col-md-10 col-lg-10" >
-            <label for="nome"class="form-label"> Nome:</label>
-            <input class="form-control" type="text" aria-label="nome" id="nome" required>
-        </div>
-        <div class="col-12 col-md-10 col-lg-10" >
-            <label for="peso">Peso em Kg:</label>
-            <input class="form-control" type="text" arial-label="peso" id="peso" required>
-        </div>
-        <div class="col-12 col-md-10 col-lg-10" >
-            <label for="altura" class="form-label">Altura:</label>
-            <input class="form-control" type="text" arial-label="altura" id="altura" required>
-        </div>
-        
-        <div class="d-flex justify-content-end mt-5">
-                    <button type="submit" class="btn btn-success"> Enviar</button>
-                </div>
-        
-    </form>
-    </div>
-    </main>  
 
-    <script src="js/script.js"></script>
+        <h2 style="margin-top: 30px;">Calcule seu IMC</h2>
+
+     <div class="container text-left">
+         <div class="row">
+
+            <form method="">
+
+            <div class="col-6 col-md-4 col-lg-4 col-xl-2 ">
+        <label for="nome"> Nome:</label>
+        <input  class="form-control" type="text" aria-label="nome" id="nome" required><br>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-4 col-xl-2 ">
+        <label for="peso">Peso:</label>
+        <input  class="form-control" type="text" arial-label="peso" id="peso" placeholder=" Informe o peso em Kg" required><br>
+            </div>
+        
+            <div class="col-4 col-md-4 col-lg-4 col-xl-4 ">
+        <label for="altura" >Altura:</label><br>
+        <input  class="form-control" type="text" arial-label="altura" id="altura" placeholder="Informe a altura em metros" required><br><br>
+            </div>
+            <div>
+        <button type="submit" style="position: ;" id="submit"
+        class="btn btn-success"> Enviar</button><br>    
+        </div>
+         
+             </form>
+        </div>
+    </div>
+        
+    
+
+    <div id="result"></div>
+    </main>  
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+     crossorigin="anonymous"></script>
+    <!-- o meu script deve vir depois do script do bootstrap -->
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
 
