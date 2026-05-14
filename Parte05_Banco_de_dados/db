@@ -1,0 +1,10 @@
+//relacionamento de entidades 
+//devemos primeiro saber o tipo de relacionamento que as entidades tem 
+// com outra entidade. Os tipos podem ser:
+//um para um
+//um para muitos 
+//muitos para muitos
+
+
+//relacionamento um pra muitos
+//o que liga uma tabela para a outra é a chave de imagem. CHAVE ESTRANGEIRA

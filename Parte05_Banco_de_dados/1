@@ -1,0 +1,14 @@
+//o que cada codigo significa no mysql
+//PK(Primary Key): indica que a coluna é uma chave primária,
+//o que significa que cada valor na coluna deve ser único e
+//  não nulo para indentificar unicamente cada  linha tabela
+
+//NN(not null) Especifica que a coluna não pode aceitar valores nulos,
+//garantindo que cada linha tenha um valor válido nesta coluna
+
+//UQ(unique) determina qu métodos os valores na coluna devem ser únicos
+//dentro da tabela, mas diferentemente da chave primária, uma coluna única
+//pode conter valores nulos
+
+//B(Binary ) quando este setor é marcado, a coluna é tratada como 
+//
