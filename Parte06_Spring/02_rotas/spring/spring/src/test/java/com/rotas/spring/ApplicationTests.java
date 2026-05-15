@@ -1,4 +1,4 @@
-package com.helloworld.spring.controllers;
+package com.rotas.spring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
